@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel & Bot Store | Layanan Tercepat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6', // Warna Biru Utama
+                        dark: '#0f172a',    // Background Gelap
+                        card: '#1e293b'     // Background Kartu
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glow-text { text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+    </style>
+</head>
+<body class="bg-dark text-white antialiased">
+
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-primary">Valz Market</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="hover:text-primary px-3 py-2 rounded-md font-medium">Home</a>
+                        <a href="#panel" class="hover:text-primary px-3 py-2 rounded-md font-medium">Panel</a>
+                        <a href="#bot" class="hover:text-primary px-3 py-2 rounded-md font-medium">Sewa Bot</a>
+                        <a href="#contact" class="hover:text-primary px-3 py-2 rounded-md font-medium">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-900/30 text-blue-400 text-sm font-semibold mb-4 border border-blue-800">Terpercaya & Fast Response</span>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight glow-text">
+                Solusi Terbaik untuk Kebutuhan <span class="text-primary">Panel & Bot</span> Anda
+            </h1>
+            <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
+                Kami menyediakan panel berkualitas tinggi dan bot canggih dengan uptime 99.9%. Harga murah, kualitas sultan.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#panel" class="bg-primary hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    Lihat Produk
+                </a>
+                <a href="https://wa.me/6283119678204" class="border border-gray-600 hover:border-white text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    Hubungi Admin
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="panel" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-2">Daftar Panel</h2>
+                <p class="text-gray-400">Pilih panel sesuai kebutuhan server Anda</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300">
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 1GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 1GB / CPU 50%</li>
+                        <li>✅ Storage 2GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Garansi 30 Hari</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 1.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 1GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+                <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST SELLER</div>
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 2GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 2GB / CPU 150%</li>
+                        <li>✅ Storage 10GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Support 24/7</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 2.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 4GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+ <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST SELLER</div>
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 3GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 3GB / CPU 150%</li>
+                        <li>✅ Storage 10GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Support 24/7</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 3.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 4GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+ <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST SELLER</div>
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 4GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 4GB / CPU 150%</li>
+                        <li>✅ Storage 10GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Support 24/7</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 4.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 4GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+ <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST SELLER</div>
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 5GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 5GB / CPU 150%</li>
+                        <li>✅ Storage 10GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Support 24/7</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 5.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 4GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+ <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST SELLER</div>
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 6GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 6GB / CPU 150%</li>
+                        <li>✅ Storage 10GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Support 24/7</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 6.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 4GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+ <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST SELLER</div>
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 7GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 7GB / CPU 150%</li>
+                        <li>✅ Storage 10GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Support 24/7</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 7.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 4GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+ <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST SELLER</div>
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 8GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 8GB / CPU 150%</li>
+                        <li>✅ Storage 10GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Support 24/7</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 8.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 4GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+ <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">BEST SELLER</div>
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Pterodactyl 9GB</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM 9GB / CPU 150%</li>
+                        <li>✅ Storage 10GB SSD</li>
+                        <li>✅ Anti-DDoS</li>
+                        <li>✅ Support 24/7</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 9.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Ptero 4GB')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+
+
+                <div class="bg-card p-6 rounded-xl border border-gray-700 hover:border-primary transition duration-300">
+                    <div class="h-12 w-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-4 text-primary text-xl font-bold">P</div>
+                    <h3 class="text-xl font-bold mb-2">Panel Unlimited</h3>
+                    <ul class="text-gray-400 text-sm mb-6 space-y-2">
+                        <li>✅ RAM Unlimited</li>
+                        <li>✅ CPU Unlimited</li>
+                        <li>✅ Storage Unlimited</li>
+                        <li>✅ Private Node</li>
+                    </ul>
+                    <p class="text-2xl font-bold text-white mb-4">Rp 10.000 <span class="text-sm text-gray-500 font-normal">/bulan</span></p>
+                    <button onclick="order('Panel Unlimited')" class="w-full bg-primary hover:bg-blue-600 py-2 rounded-lg font-semibold transition">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bot" class="py-20 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-2">Sewa Bot WhatsApp/Game</h2>
+                <p class="text-gray-400">Otomatiskan grup dan kebutuhan server Anda</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex bg-card p-6 rounded-xl border border-gray-700">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">Sewa Bot WhatsApp Premium</h3>
+                        <p class="text-gray-400 text-sm mb-4">Fitur antilink, welcome, hidetag, download, AI Chat, dan broadcast.</p>
+                        <p class="text-xl font-bold text-primary mb-4">Rp 10.000 /bulan</p>
+                        <button onclick="order('Sewa Bot WA Premium')" class="bg-gray-700 hover:bg-gray-600 px-6 py-2 rounded-lg font-semibold transition">Sewa Sekarang</button>
+                    </div>
+                </div>
+                <div class="flex bg-card p-6 rounded-xl border border-gray-700">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold mb-2">Sewa Bot Store / Topup</h3>
+                        <p class="text-gray-400 text-sm mb-4">Fitur deposit otomatis, list produk, cek status transaksi, mutasi otomatis.</p>
+                        <p class="text-xl font-bold text-primary mb-4">Rp 25.000 /bulan</p>
+                        <button onclick="order('Sewa Bot Store')" class="bg-gray-700 hover:bg-gray-600 px-6 py-2 rounded-lg font-semibold transition">Sewa Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 border-t border-gray-800 py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">Val Market</h2>
+            <p class="text-gray-500 mb-6">Menyediakan layanan digital terbaik sejak 2024.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-white">Telegram</a>
+                <a href="#" class="text-gray-400 hover:text-white">WhatsApp</a>
+            </div>
+            <p class="text-gray-600 text-sm">&copy; 2024 Nama Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function order(produk) {
+            // GANTI NOMOR WA DI BAWAH INI (Ganti 628xxx dengan nomor kamu)
+            const nomorWA = "6283119678204"; 
+            
+            const pesan = `Halo Admin, saya ingin membeli produk: *${produk}*. Mohon info pembayaran.`;
+            
+            // Membuat link WhatsApp
+            const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+            
+            // Membuka tab baru
+            Valz.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
